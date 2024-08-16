@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Education Loan EMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <h1>STUDENT EDUCATION LOAN EMI CALCULATOR</h1>
+        <div class="input-section">
+            <label for="loanAmount">Loan amount</label>
+            <input type="range" id="loanAmount" min="50000" max="10000000" value="4200000" oninput="updateLoanAmountLabel(this.value)">
+            <span id="loanAmountLabel">₹ 4200000</span>
+            
+            <label for="interestRate">Rate of interest (p.a)</label>
+            <input type="range" id="interestRate" min="5" max="20" step="0.1" value="12.8" oninput="updateInterestRateLabel(this.value)">
+            <span id="interestRateLabel">12.8%</span>
+            
+            <label for="loanTenure">Loan tenure (years)</label>
+            <input type="range" id="loanTenure" min="1" max="30" value="2" oninput="updateLoanTenureLabel(this.value)">
+            <span id="loanTenureLabel">2 Yr</span>
+        </div>
+        <div class="results-section">
+            <div class="result">
+                <h3>Monthly EMI</h3>
+                <p id="monthlyEmi">₹ 0</p>
+            </div>
+            <div class="result">
+                <h3>Principal amount</h3>
+                <p id="principalAmount">₹ 0</p>
+            </div>
+            <div class="result">
+                <h3>Total interest</h3>
+                <p id="totalInterest">₹ 0</p>
+            </div>
+            <div class="result">
+                <h3>Total amount</h3>
+                <p id="totalAmount">₹ 0</p>
+            </div>
+        </div>
+        <div class="chart-section">
+            <canvas id="emiChart"></canvas>
+        </div>
+        <button onclick="calculateEMI()">Calculate EMI</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

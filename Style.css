@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:150vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    text-justify:distribute ;
+    color: rgba(234, 240, 244, 0.972);
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    background-color: #0830b3;
+    
+    
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-section input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-section span {
+    float: right;
+    font-weight: bold;
+    color: #333;
+}
+
+.results-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.result {
+    width: 48%;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.result h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.result p {
+    margin: 5px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.chart-section {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
